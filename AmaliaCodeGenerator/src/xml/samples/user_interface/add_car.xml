@@ -1,0 +1,16 @@
+<UIM nome="add_car" dm="rent_car_domain_model.xml">
+	<InteractionSpace id="add_car" text="Add Car" x="320"
+		y="108.99999999999997" w="500" h="400" classe="Car">
+		<ViewEntity id="ve_add_car" text="New Car" x="348" y="175"
+			w="450" h="300" classe="Car">
+			<InputOnly id="inputonly_brand" text="Brand" x="363" y="238"
+				w="200" h="60" classe="Car" atributo="brand" />
+			<InputOnly id="inputonly_licence_plate" text="Licence Plate"
+				x="364" y="312" w="200" h="60" classe="Car" atributo="licence_plate" />
+			<InputOnly id="inputonly_model" text="Model" x="578" y="238"
+				w="200" h="60" classe="Car" atributo="model" />
+			<CallCreateOp id="callcreateop_save" text="Save" x="585"
+				y="400" w="200" h="60" classe="Car" operacao="Create" />
+		</ViewEntity>
+	</InteractionSpace>
+</UIM>

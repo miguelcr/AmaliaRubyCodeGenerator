@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="AMALIA_MOBILE_0.1">
+	<name>RentCar</name>
+	<use_case_diagram empty="true">
+	</use_case_diagram>
+	<domain_model>
+		<elements>
+			<element id="2d85f466-1dfa-4214-8596-e00d67cddedd">
+				<type>class</type>
+				<name>Client</name>
+				<attributes>
+					<attribute visibility="private" type="string">name</attribute>
+					<attribute visibility="private" type="string">address</attribute>
+					<attribute visibility="private" type="numeric">age</attribute>
+					<attribute visibility="private" type="string">phone</attribute>
+				</attributes>
+			</element>
+			<element id="00496147-e40d-4e98-b54f-e8be93bd7986">
+				<type>class</type>
+				<name>Car</name>
+				<attributes>
+					<attribute visibility="private" type="string">brand</attribute>
+					<attribute visibility="private" type="string">model</attribute>
+					<attribute visibility="private" type="string">licence_plate</attribute>
+				</attributes>
+			</element>
+			<element id="2413f149-2b88-4151-89af-5973b9b410b5">
+				<type>class</type>
+				<name>Rental</name>
+				<attributes>
+					<attribute visibility="private" type="date">start_date</attribute>
+					<attribute visibility="private" type="date">end_date</attribute>
+					<attribute visibility="private" type="date">estimated_start_date</attribute>
+					<attribute visibility="private" type="date">estimated_end_date</attribute>
+					<attribute visibility="private" type="string">comments</attribute>
+				</attributes>
+			</element>
+		</elements>
+		<connections>
+			<connection id="10801407-ef08-40d6-9214-21666d09d5f7">
+				<type>association</type>
+				<cardinality_destination>1</cardinality_destination>
+				<cardinality_source>*</cardinality_source>
+				<source_id>2413f149-2b88-4151-89af-5973b9b410b5</source_id>
+				<destination_id>2d85f466-1dfa-4214-8596-e00d67cddedd</destination_id>
+			</connection>
+			<connection id="eb78d086-4689-4c3f-8226-1dbc2152d287">
+				<type>association</type>
+				<cardinality_destination>1</cardinality_destination>
+				<cardinality_source>*</cardinality_source>
+				<source_id>2413f149-2b88-4151-89af-5973b9b410b5</source_id>
+				<destination_id>00496147-e40d-4e98-b54f-e8be93bd7986</destination_id>
+			</connection>
+		</connections>
+	</domain_model>
+</project>

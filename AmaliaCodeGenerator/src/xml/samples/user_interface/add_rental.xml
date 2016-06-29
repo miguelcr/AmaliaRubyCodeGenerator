@@ -1,0 +1,20 @@
+<UIM nome="add_rental" dm="rent_car_domain_model.xml">
+	<InteractionSpace id="add_rental" text="Add Rental" x="320"
+		y="109.99999999999974" w="500" h="450" classe="Rental">
+		<ViewEntity id="ve_add_rental" text="New Rental" x="348"
+			y="175.00000000000003" w="450" h="360" classe="Rental">
+			<InputOnly id="inputonly_start_date" text="Start Date" x="363"
+				y="238" w="200" h="60" classe="Rental" atributo="start_date" />
+			<InputOnly id="inputonly_estimated_start_date" text="Estimated Start Date"
+				x="361" y="311" w="200" h="60" classe="Rental" atributo="estimated_start_date" />
+			<InputOnly id="inputonly_end_date" text="End Date" x="575"
+				y="240" w="200" h="60" classe="Rental" atributo="end_date" />
+			<InputOnly id="inputonly_estimated_end_date" text="Estimated End Date"
+				x="577" y="313" w="200" h="60" classe="Rental" atributo="estimated_end_date" />
+			<InputOnly id="inputonly_comments" text="Comments" x="362"
+				y="381" w="200" h="60" classe="Rental" atributo="comments" />
+			<CallCreateOp id="callcreateop_save" text="Save" x="583"
+				y="458" w="200" h="60" classe="Rental" operacao="Create" />
+		</ViewEntity>
+	</InteractionSpace>
+</UIM>

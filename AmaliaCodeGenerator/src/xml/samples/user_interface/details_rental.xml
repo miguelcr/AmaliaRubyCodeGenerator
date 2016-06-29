@@ -1,0 +1,38 @@
+<UIM nome="details_rental" dm="rent_car_domain_model.xml">
+	<InteractionSpace id="details_rental" text="View Rental Details"
+		x="148" y="58.99999999999998" w="730" h="580" classe="Rental">
+		<ViewEntity id="ve_rental" text="Rental" x="165.00000000000003"
+			y="128" w="690" h="210" classe="Rental">
+			<OutputOnly id="outputonly_start_date" text="Start Date"
+				x="233" y="181" w="200" h="60" classe="Rental" atributo="start_date" />
+			<OutputOnly id="outputonly_estimated_start_date" text="Estimated Start Date"
+				x="232" y="247" w="200" h="60" classe="Rental" atributo="estimated_start_date" />
+			<OutputOnly id="outputonly_end_date" text="End Date" x="439"
+				y="181" w="200" h="60" classe="Rental" atributo="end_date" />
+			<OutputOnly id="outputonly_estimated_end_date" text="Estimated End Date"
+				x="439" y="248" w="200" h="60" classe="Rental" atributo="estimated_end_date" />
+			<OutputOnly id="outputonly_comments" text="Comments" x="646"
+				y="184" w="200" h="60" classe="Rental" atributo="comments" />
+		</ViewEntity>
+		<ViewRelatedEntity id="vre_car" text="Car"
+			x="162.00000000000003" y="352" w="260" h="270" classe="Car">
+			<OutputOnly id="outputonly_licence_plate" text="Licence Plate"
+				x="173" y="550" w="200" h="60" classe="Car" atributo="licence_plate" />
+			<OutputOnly id="outputonly_model" text="Model" x="174" y="482"
+				w="200" h="60" classe="Car" atributo="model" />
+			<OutputOnly id="outputonly_brand" text="Brand" x="174" y="413"
+				w="200" h="60" classe="Car" atributo="brand" />
+		</ViewRelatedEntity>
+		<ViewRelatedEntity id="vre_client" text="Client" x="434"
+			y="352" w="430" h="270" classe="Client">
+			<OutputOnly id="outputonly_name" text="Name" x="445" y="413"
+				w="200" h="60" classe="Client" atributo="name" />
+			<OutputOnly id="outputonly_address" text="Address" x="446"
+				y="481" w="200" h="60" classe="Client" atributo="address" />
+			<OutputOnly id="outputonly_age" text="Age" x="655" y="481"
+				w="200" h="60" classe="Client" atributo="age" />
+			<OutputOnly id="outputonly_phone" text="Phone" x="655" y="413"
+				w="200" h="60" classe="Client" atributo="phone" />
+		</ViewRelatedEntity>
+	</InteractionSpace>
+</UIM>

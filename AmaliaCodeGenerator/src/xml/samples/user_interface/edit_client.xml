@@ -1,0 +1,19 @@
+<UIM nome="edit_client" dm="rent_car_domain_model.xml">
+	<InteractionSpace id="edit_client" text="Edit Client"
+		x="252.99999999999994" y="70.00000000000003" w="500.00000000000006" h="400"
+		classe="Client">
+		<ViewEntity id="ve_client" text="Client" x="272.99999999999994"
+			y="129.00000000000003" w="460.00000000000006" h="310" classe="Client">
+			<Editting id="editting_name" text="Name" x="294" y="197" w="200"
+				h="60" classe="Client" atributo="name" />
+			<Editting id="editting_age" text="Age" x="296" y="276" w="200"
+				h="60" classe="Client" atributo="age" />
+			<Editting id="editting_address" text="Address" x="516" y="198"
+				w="200" h="60" classe="Client" atributo="address" />
+			<Editting id="editting_phone" text="Phone" x="516" y="277"
+				w="200" h="60" classe="Client" atributo="phone" />
+			<CallUpdateOp id="callupdateop_save" text="Save" x="513"
+				y="356" w="200" h="60" classe="Client" operacao="Update" />
+		</ViewEntity>
+	</InteractionSpace>
+</UIM>

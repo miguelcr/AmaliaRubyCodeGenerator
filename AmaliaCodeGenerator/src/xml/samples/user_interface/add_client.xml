@@ -1,0 +1,18 @@
+<UIM nome="add_client" dm="rent_car_domain_model.xml">
+	<InteractionSpace id="add_client" text="Add Client" x="320"
+		y="110.99999999999997" w="500" h="400" classe="Client">
+		<ViewEntity id="ve_add_cliente" text="New Client" x="348"
+			y="175" w="450" h="300" classe="Client">
+			<InputOnly id="inputonly_name" text="Name" x="363" y="238"
+				w="200" h="60" classe="Client" atributo="name" />
+			<InputOnly id="inputonly_age" text="Age" x="365" y="313" w="200"
+				h="60" classe="Client" atributo="age" />
+			<InputOnly id="inputonly_address" text="Address" x="571" y="238"
+				w="200" h="60" classe="Client" atributo="address" />
+			<InputOnly id="inputonly_phone" text="Phone" x="573" y="311"
+				w="200" h="60" classe="Client" atributo="phone" />
+			<CallCreateOp id="callcreateop_save" text="Save" x="575"
+				y="401" w="200" h="60" classe="Client" operacao="Create" />
+		</ViewEntity>
+	</InteractionSpace>
+</UIM>

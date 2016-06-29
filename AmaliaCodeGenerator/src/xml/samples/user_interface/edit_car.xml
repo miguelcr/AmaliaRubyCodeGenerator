@@ -1,0 +1,16 @@
+<UIM nome="edit_car" dm="rent_car_domain_model.xml">
+	<InteractionSpace id="edit_car" text="Edit Car" x="142"
+		y="92.00000000000001" w="730" h="310" classe="Car">
+		<ViewEntity id="ve_car" text="Car" x="179.00000000000003"
+			y="165" w="660" h="220" classe="Car">
+			<Editting id="editting_brand" text="Brand" x="200" y="227"
+				w="200" h="60" classe="Car" atributo="brand" />
+			<Editting id="editting_model" text="Model" x="409" y="227"
+				w="200" h="60" classe="Car" atributo="model" />
+			<Editting id="editting_licence_plate" text="Licence Plate"
+				x="618" y="227" w="200" h="60" classe="Car" atributo="licence_plate" />
+			<CallUpdateOp id="callupdateop_save" text="Save" x="616"
+				y="308" w="200" h="60" classe="Car" operacao="Update" />
+		</ViewEntity>
+	</InteractionSpace>
+</UIM>

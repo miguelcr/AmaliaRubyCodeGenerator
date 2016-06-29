@@ -1,0 +1,29 @@
+<UIM nome="details_client" dm="rent_car_domain_model.xml">
+	<InteractionSpace id="details_client" text="View Client Details"
+		x="140" y="54.99999999999998" w="730" h="580" classe="Client">
+		<ViewEntity id="ve_client" text="Client" x="171.99999999999997"
+			y="126" w="500" h="210" classe="Client">
+			<OutputOnly id="outputonly_name" text="Name" x="191" y="195"
+				w="200" h="60" classe="Client" atributo="name" />
+			<OutputOnly id="outputonly_address" text="Address" x="425"
+				y="195" w="200" h="60" classe="Client" atributo="age" />
+			<OutputOnly id="outputonly_age" text="Age" x="423" y="265"
+				w="200" h="60" classe="Client" atributo="age" />
+			<OutputOnly id="outputonly_phone" text="Phone" x="192" y="265"
+				w="200" h="60" classe="Client" atributo="phone" />
+		</ViewEntity>
+		<ViewRelatedList id="vrl_rentals" text="Client Rentals"
+			x="170.99999999999997" y="346" w="500" h="270" classe="Rental">
+			<OutputOnly id="outputonly_start_date" text="Start Date"
+				x="192" y="412" w="200" h="60" classe="Rental" atributo="start_date" />
+			<OutputOnly id="outputonly_end_date" text="End Date" x="435"
+				y="362" w="200" h="60" classe="Rental" atributo="end_date" />
+			<OutputOnly id="outputonly_estimated_start_date" text="Estimated Start Date"
+				x="192" y="482" w="200" h="60" classe="Rental" atributo="estimated_start_date" />
+			<OutputOnly id="outputonly_estimated_end_date" text="Estimated End Date"
+				x="431" y="435" w="200" h="60" classe="Rental" atributo="estimated_end_date" />
+			<OutputOnly id="outputonly_comments" text="Comments" x="433"
+				y="505" w="200" h="60" classe="Rental" atributo="comments" />
+		</ViewRelatedList>
+	</InteractionSpace>
+</UIM>

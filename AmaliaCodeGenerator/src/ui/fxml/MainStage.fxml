@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="538.0" prefWidth="781.0" xmlns="http://javafx.com/javafx/8.0.40" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ui.controllers.MainStageController">
+   <top>
+      <MenuBar prefWidth="764.0" BorderPane.alignment="CENTER">
+        <menus>
+          <Menu fx:id="menuFile" mnemonicParsing="false" text="%menu.file">
+            <items>
+              <MenuItem fx:id="menuitemClose" mnemonicParsing="false" text="%menu.file.menuitem.close" />
+            </items>
+          </Menu>
+          <Menu fx:id="menuHelp" mnemonicParsing="false" text="%menu.help">
+            <items>
+              <MenuItem fx:id="menuitemAbout" mnemonicParsing="false" text="%menu.file.menuitem.about" />
+            </items>
+          </Menu>
+        </menus>
+      </MenuBar>
+   </top>
+   <center>
+      <AnchorPane prefHeight="476.0" prefWidth="747.0" BorderPane.alignment="CENTER">
+         <children>
+            <TabPane layoutX="12.0" layoutY="32.0" prefHeight="239.0" prefWidth="758.0" tabClosingPolicy="UNAVAILABLE" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+              <tabs>
+                <Tab fx:id="tabDomainModel" text="%tab1.title">
+                  <content>
+                    <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                           <children>
+                              <VBox layoutX="10.0" layoutY="10.0" AnchorPane.bottomAnchor="10.0" AnchorPane.leftAnchor="10.0" AnchorPane.rightAnchor="10.0" AnchorPane.topAnchor="10.0">
+                                 <children>
+                                    <GridPane>
+                                       <columnConstraints>
+                                          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" />
+                                          <ColumnConstraints hgrow="SOMETIMES" maxWidth="200.0" minWidth="10.0" />
+                                       </columnConstraints>
+                                       <rowConstraints>
+                                          <RowConstraints minHeight="10.0" vgrow="SOMETIMES" />
+                                          <RowConstraints minHeight="10.0" vgrow="SOMETIMES" />
+                                       </rowConstraints>
+                                       <children>
+                                          <Button fx:id="btChooseDomainModel" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" text="%tab1.button.choosedomainmodelfile" GridPane.columnIndex="1">
+                                             <GridPane.margin>
+                                                <Insets bottom="5.0" left="5.0" top="5.0" />
+                                             </GridPane.margin>
+                                          </Button>
+                                          <Button fx:id="btLoadDomainModel" disable="true" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" prefHeight="25.0" prefWidth="161.0" text="%tab1.button.loaddomainmodel" GridPane.columnIndex="1" GridPane.rowIndex="1">
+                                             <GridPane.margin>
+                                                <Insets bottom="5.0" left="5.0" top="5.0" />
+                                             </GridPane.margin>
+                                          </Button>
+                                          <TextField fx:id="tfDomainModelFilePath" disable="true" editable="false" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308">
+                                             <GridPane.margin>
+                                                <Insets bottom="5.0" right="5.0" top="5.0" />
+                                             </GridPane.margin>
+                                          </TextField>
+                                       </children>
+                                    </GridPane>
+                                    <TextArea fx:id="taOutputDM" editable="false" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" wrapText="true" VBox.vgrow="ALWAYS">
+                                       <VBox.margin>
+                                          <Insets top="10.0" />
+                                       </VBox.margin></TextArea>
+                                 </children>
+                              </VBox>
+                           </children>
+                        </AnchorPane>
+                  </content>
+                </Tab>
+                <Tab fx:id="tabUserInterface" disable="true" text="%tab2.title">
+                  <content>
+                    <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                           <children>
+                              <VBox AnchorPane.bottomAnchor="10.0" AnchorPane.leftAnchor="10.0" AnchorPane.rightAnchor="10.0" AnchorPane.topAnchor="10.0">
+                                 <children>
+                                    <GridPane>
+                                       <columnConstraints>
+                                          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" />
+                                          <ColumnConstraints hgrow="SOMETIMES" maxWidth="200.0" minWidth="10.0" />
+                                       </columnConstraints>
+                                       <rowConstraints>
+                                          <RowConstraints minHeight="10.0" vgrow="SOMETIMES" />
+                                          <RowConstraints minHeight="10.0" vgrow="SOMETIMES" />
+                                       </rowConstraints>
+                                       <children>
+                                          <Button fx:id="btChooseUserInterfaceModels" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" text="%tab2.button.chooseuserinterfacefiles" GridPane.columnIndex="1">
+                                             <GridPane.margin>
+                                                <Insets bottom="5.0" left="5.0" top="5.0" />
+                                             </GridPane.margin>
+                                          </Button>
+                                          <Button fx:id="btLoadUserInterface" disable="true" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" prefHeight="25.0" prefWidth="161.0" text="%tab2.button.loaduserinterface" GridPane.columnIndex="1" GridPane.rowIndex="1">
+                                             <GridPane.margin>
+                                                <Insets bottom="5.0" left="5.0" top="5.0" />
+                                             </GridPane.margin>
+                                          </Button>
+                                          <Button fx:id="btResetTable" disable="true" mnemonicParsing="false" text="%tab2.button.resettable" GridPane.rowIndex="1" />
+                                       </children>
+                                    </GridPane>
+                                    <TableView fx:id="tvUIfiles" prefHeight="157.0" prefWidth="746.0" VBox.vgrow="ALWAYS">
+                                      <columns>
+                                        <TableColumn fx:id="tcFileName" maxWidth="1.7976931348623157E308" minWidth="300.0" prefWidth="-1.0" text="%tab2.table.column.file" />
+                                          <TableColumn fx:id="tcPath" prefWidth="300.0" text="%tab2.table.column.path" />
+                                      </columns>
+                                       <contextMenu>
+                                          <ContextMenu>
+                                            <items>
+                                              <MenuItem fx:id="actionDeleteFile" mnemonicParsing="false" text="Delete File" />
+                                            </items>
+                                          </ContextMenu>
+                                       </contextMenu>
+                                       <VBox.margin>
+                                          <Insets top="10.0" />
+                                       </VBox.margin>
+                                    </TableView>
+                                    <TextArea fx:id="taOutputUI" editable="false" prefHeight="200.0" prefWidth="732.0" VBox.vgrow="ALWAYS">
+                                       <VBox.margin>
+                                          <Insets top="10.0" />
+                                       </VBox.margin>
+                                    </TextArea>
+                                 </children>
+                              </VBox>
+                           </children>
+                        </AnchorPane>
+                  </content>
+                </Tab>
+                  <Tab fx:id="tabGenerateScript" disable="true" text="%tab3.title">
+                    <content>
+                      <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                           <children>
+                              <VBox layoutX="14.0" layoutY="14.0" AnchorPane.bottomAnchor="10.0" AnchorPane.leftAnchor="10.0" AnchorPane.rightAnchor="10.0" AnchorPane.topAnchor="10.0">
+                                 <children>
+                                    <GridPane>
+                                       <columnConstraints>
+                                          <ColumnConstraints halignment="RIGHT" hgrow="SOMETIMES" minWidth="10.0" />
+                                          <ColumnConstraints hgrow="SOMETIMES" maxWidth="200.0" minWidth="10.0" prefWidth="100.0" />
+                                          <ColumnConstraints hgrow="SOMETIMES" maxWidth="200.0" minWidth="10.0" />
+                                       </columnConstraints>
+                                       <rowConstraints>
+                                          <RowConstraints minHeight="10.0" vgrow="SOMETIMES" />
+                                          <RowConstraints minHeight="10.0" vgrow="SOMETIMES" />
+                                       </rowConstraints>
+                                       <children>
+                                          <Button fx:id="btDownloadScript" disable="true" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" prefHeight="25.0" prefWidth="161.0" text="%tab3.button.downloadscript" GridPane.columnIndex="2" GridPane.rowIndex="1">
+                                             <GridPane.margin>
+                                                <Insets bottom="5.0" left="5.0" top="5.0" />
+                                             </GridPane.margin>
+                                          </Button>
+                                          <Button fx:id="btGenerateScript" disable="true" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" text="%tab3.button.generatescript" GridPane.columnIndex="2">
+                                             <GridPane.margin>
+                                                <Insets bottom="5.0" left="5.0" top="5.0" />
+                                             </GridPane.margin>
+                                          </Button>
+                                          <ComboBox fx:id="cbMainInteractionSpace" maxWidth="1.7976931348623157E308" GridPane.columnIndex="1">
+                                             <GridPane.margin>
+                                                <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                                             </GridPane.margin>
+                                          </ComboBox>
+                                          <Label fx:id="lbChooseMainInteractionSpace" text="%tab3.label.select.main.interaction.space" />
+                                          <ComboBox fx:id="cbCodeType" disable="true" maxWidth="1.7976931348623157E308" GridPane.columnIndex="1" GridPane.rowIndex="1">
+                                             <GridPane.margin>
+                                                <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                                             </GridPane.margin>
+                                          </ComboBox>
+                                          <Label fx:id="lbCodeType" text="%tab3.label.select.code.type" GridPane.rowIndex="1" />
+                                       </children>
+                                    </GridPane>
+                                    <HBox />
+                                    <TextArea fx:id="taOutputScript" editable="false" VBox.vgrow="ALWAYS">
+                                       <VBox.margin>
+                                          <Insets top="10.0" />
+                                       </VBox.margin></TextArea>
+                                 </children>
+                              </VBox>
+                           </children></AnchorPane>
+                    </content>
+                  </Tab>
+              </tabs>
+            </TabPane>
+         </children>
+      </AnchorPane>
+   </center>
+   <bottom>
+      <HBox maxHeight="20.0" maxWidth="1.7976931348623157E308" minHeight="20.0" BorderPane.alignment="CENTER">
+         <children>
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Status: ">
+               <HBox.margin>
+                  <Insets left="10.0" />
+               </HBox.margin>
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </Text>
+            <Text fx:id="lbStatus" strokeType="OUTSIDE" strokeWidth="0.0" text="Ready" HBox.hgrow="ALWAYS" />
+         </children>
+      </HBox>
+   </bottom>
+</BorderPane>
